@@ -1,0 +1,157 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+body
+{
+    overflow-x: hidden;
+    /* background-color: #9de8e7; */
+    background-color: #fff;
+
+}
+
+.narBar{
+
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 5px;
+    position: fixed;
+    z-index: 5;
+}
+
+
+
+.buttons
+ {
+
+    font-size: 25px;
+    color : #3d332c;
+    cursor: pointer;
+    height: 60px;
+    font-style: italic;
+    border: none;
+    background:rgba(255, 255, 255, 0);
+
+}
+
+.buttons:hover {
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+.left {
+    width: 700px;
+    /* border: red 1px solid; */
+    height: 100%;
+    float: left;
+    position: fixed;
+    background-color: #d2b48e;
+}
+
+.right {
+    /* border: blue 1px solid; */
+    margin-left: 700px;
+    padding-top: 50px;
+}
+
+
+
+
+
+.project {
+    margin-top: 70px;
+    margin-left: 45px;
+    width: 600px;
+    font-size: 100px;
+    font-weight: 700;
+    font-style: italic;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    /* border:1px solid #F00; */
+    line-height: 90px;
+    margin-bottom: 10px;
+}
+
+.project:hover{
+    color: #3d332c;
+    
+}
+
+.type {
+    margin-left: 50px;
+    width: fit-content;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #363636;
+    color: rgb(255, 255, 255);
+}
+
+.others {
+    margin-left: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    /* border:1px solid #F00; */
+    width: 500px;
+    width: fit-content;
+
+
+}
+
+
+.productionMembers {
+
+    position: absolute;
+    top: 50%;
+    margin-left: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    /* border:1px solid #F00; */
+    width: 500px;
+    border-left: #000 solid 3px;
+    padding-left: 10px;
+}
+
+
+.introduction {
+
+    width: 500px;
+    position: absolute;
+    margin-left: 50px;
+    bottom: 50px;
+    /* border: red 1px solid; */
+    font-size: 20px;
+}
+
+
+
+
+
+.img {
+    margin-right: 50px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+img {
+    max-width: 100%
+}
+
+
+a {
+    text-decoration: none;
+    color: #3d332c;
+
+}

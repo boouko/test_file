@@ -1,0 +1,475 @@
+/*color: white;
+text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+*/
+   /* width: 100vw;
+    margin:auto;
+    margin-top: 50vh;
+    bottom: 50px; */
+    /* transform: translateY(-50%); */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+html,
+body
+{
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #3d332c;
+
+}
+
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    z-index: -5;
+}
+
+
+
+
+/* ============ 1-Nav Bar ============ */
+.narBar{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 5px;
+}
+
+.buttons
+ {
+
+    font-size: 25px;
+    color : #3d332c;
+    cursor: pointer;
+    height: 60px;
+    font-style: italic;
+    border: none;
+    background:rgba(255, 255, 255, 0);
+
+}
+
+.buttons:hover {
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+.buttons:focus {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+/* ============ 2-title1 ============ */
+
+
+
+.name {
+    position: absolute;
+    left: 50px;
+
+    width: 600px;
+    font-size: 100px;
+    font-weight: 700;
+    font-style: italic;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    /* border:1px solid #F00; */
+}
+
+.name:hover{
+    color: #3d332c;
+    
+}
+
+.job {
+    position: absolute;
+    left: 50px;
+    top: 190px;
+
+    width: 300px;
+    font-size: 20px;
+    font-weight: 700;
+    /* border:1px solid #F00; */
+}
+
+.region {
+    position: absolute;
+    left: 50px;
+    top: 220px;
+
+    font-size: 15px;
+    font-weight: 500;
+    /* border:1px solid #F00; */
+    width: 55px;
+
+}
+
+
+.artStore{
+    position: absolute;
+    right: 50px;
+
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff2df;
+    width: 800px;
+    text-decoration: underline;
+    text-align: right;
+    /* border:1px solid #F00; */
+}
+
+
+
+
+/* ============ 3-Content ============ */
+
+#contentAnimation {
+
+    position: absolute;
+    width: 40vw;
+    /* border:1px solid rgb(89, 0, 255); */
+    background-color: rgba(255, 255, 255,0.5);
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.subContainer{
+    width: 100%;
+    border-bottom:#3d332c 2px solid;
+}
+
+.contentTitle {
+    border-top:#3d332c 2px solid;
+    font-size: 20px;
+    font-weight: 500;
+    font-style:oblique;
+    color: white;
+}
+
+.titleContainer {
+    background-color:rgb(31, 31, 31);
+    padding-left: 10px;
+}
+
+.animation {
+
+    width: 100%;
+    font-size: 90px;
+    text-align: left;
+    font-weight: 400;
+    color : #3d332c;
+    font-style: oblique;
+    line-height: 110px;
+
+}
+
+
+
+.animationPreview{
+    width: 30px;
+    display: none;
+
+}
+
+
+.animationComment {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    color: #3d332c;
+}
+
+.animation:hover {
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+.animationComment:hover {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.animation:hover + .animationPreview {
+    display: block;
+    cursor: pointer;
+
+}
+
+.animationComment:hover + .animationPreview {
+    display: block;
+    cursor: pointer;
+}
+
+.animationPreview:hover {
+    cursor:pointer;
+}
+
+.animationPreview:hover + .animationPreview {
+    display: block;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#contentGraphicDesign {
+
+    position: absolute;
+    width: 40vw;
+    /* border:1px solid rgb(89, 0, 255); */
+    background-color: rgba(255, 255, 255,0.5);
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.titleContainerGraphic {
+    background-color:rgb(31, 31, 31);
+    padding-left: 50px;
+}
+
+.graphic {
+
+    width: 100%;
+    font-size: 80px;
+    text-align: left;
+    font-weight: 400;
+    color : #3d332c;
+    font-style: oblique;
+    line-height: 90px;
+    margin-left: 50px;
+
+}
+
+.graphicPreview{
+    width: 30px;
+    display: none;
+    margin-left: 50px;
+
+}
+
+.graphicComment {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    color: #3d332c;
+    margin-left: 50px;
+
+}
+
+.graphic:hover {
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+.graphicComment:hover {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.graphic:hover + .graphicPreview {
+    display: block;
+    cursor: pointer;
+
+}
+
+.graphicComment:hover + .graphicPreview {
+    display: block;
+    cursor: pointer;
+}
+
+.graphicPreview:hover {
+    cursor:pointer;
+}
+
+.graphicPreview:hover + .graphicPreview {
+    display: block;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+#content3D {
+
+    position: absolute;
+    width: 40vw;
+    /* border:1px solid rgb(89, 0, 255); */
+    background-color: rgba(255, 255, 255,0.5);
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+
+
+
+
+
+
+#contentInteraction {
+
+    position: absolute;
+    width: 40vw;
+    /* border:1px solid rgb(89, 0, 255); */
+    background-color: rgba(255, 255, 255,0.5);
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.interaction {
+
+    width: 100%;
+    font-size: 70px;
+    text-align: left;
+    font-weight: 400;
+    color : #3d332c;
+    font-style: oblique;
+    line-height: 80px;
+    margin-left: 50px;
+
+
+}
+
+
+
+
+
+
+
+
+#contentDrawing {
+
+    position: absolute;
+    width: 40vw;
+    /* border:1px solid rgb(89, 0, 255); */
+    background-color: rgba(255, 255, 255,0.5);
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+
+
+/* ============ 4-footer ============ */
+
+.footer {
+    position: absolute;
+    bottom: 50px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.aboutMe {
+    width: 400px;
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    color: #3d332c;
+    border-left: #3d332c 4px solid;
+    padding-left: 20px;
+}
+
+.contact0{
+    position: relative;
+    width: 400px;
+    height: 110px;
+
+}
+
+
+
+.contact1{
+    width: 400px;
+    height: 110px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #3d332c;
+    border-left: #3d332c 4px solid;
+    padding-left: 20px;
+
+}
+
+.contact2{
+    height: 110px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #3d332c;
+
+    border-left: #3d332c 4px solid;
+    padding-left: 20px;
+    margin-right: 50px;
+
+}
+
+
+
+
+
+/*# sourceMappingURL=main.css.map*/
